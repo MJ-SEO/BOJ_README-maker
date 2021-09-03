@@ -1,4 +1,4 @@
-# BOH README Maker
+# BOJ README Maker
 
 ## Feature
 
