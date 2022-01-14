@@ -1,0 +1,18 @@
+language: c
+
+compiler:
+	- gcc
+	- clang
+
+notifications:
+	slack:
+	email:
+		- audwns392@naver.com
+		- 21600343@handong.edu
+
+deploy:
+
+git:
+	depth: 4
+
+
