@@ -1,0 +1,17 @@
+language: c
+
+compiler:
+ - gcc
+ - clang
+
+script: "gcc maker.c"
+
+notifications:
+ email:
+  recipients:
+   - audwns392@naver.com
+   - 21600343@handong.edu
+  on_success: never
+  on_failure: always
+
+

@@ -52,6 +52,7 @@ int add_list(char* file_name, readme_t* list, int index){
 
 int make_readme(char* title, readme_t* content, char* address, int count){
 	FILE* readme;
+	// TODO target path
 
 	readme = fopen("README.md", "w+");
 	if(readme == NULL){
