@@ -4,14 +4,20 @@ compiler:
  - gcc
  - clang
 
-script: "gcc maker.c"
+script:
+ - cmake .
+ - make
 
 notifications:
  email:
   recipients:
    - audwns392@naver.com
-   - 21600343@handong.edu
   on_success: never
   on_failure: always
 
-
+deploy:
+ provider: releases
+ api_key: $GITHUB_TOKEN
+ skip_cleanup: true
+ on:
+  tags: true
